@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../images/logo.png';
+import logo from '../../images/mobileplanet.png';
 import './Header.css';
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
@@ -14,7 +14,7 @@ const Header = () => {
                 <Link to="/shop">Shop</Link>
                 <Link to="/review">Order Review</Link>
                 <Link to="/inventory">About Us</Link>
-                <button onClick={() => setLoggedInUser({})}>Sign out</button>
+                <button className='bttn' onClick={() => setLoggedInUser({})}>Sign out</button>
             </nav>
         </div>
     );
